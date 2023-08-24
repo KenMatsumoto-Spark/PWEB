@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Denilce">
+  <meta name="description" content="Revisão de HTML">
+  <meta name="viewport" content="sites, web, tags, html">
+  <link rel="stylesheet" href="styles.css">
+  <title>Primeira Página</title>
+</head>
+
+<body background="img1.gif" bgcolor="#ffffff" text="#ffffff" link="#00FF00" vlink="8A2BE2" alink="#DC143C">
+  <header>
+    <h1 id="title">
+      LINGUAGENS PARA BACK-END
+    </h1>
+    <br>
+    <nav>
+      <ul>
+        <li><a href="#introducao">Introdução</a></li>
+        <li><a href="#o-que-e">O que é BACK-END</a></li>
+        <li><a href="#exemplos">Exemplos de linguagens e frameworks</a></li>
+        <ol>
+          <li><a href="#framework">Mas, o que é um framework? E qual a diferença entre biblioteca</a></li>
+          <li><a href="#javascript-express">Java Script e Express</a></li>
+          <li><a href="#python-flask">Python e Flask</a></li>
+        </ol>
+        <li><a href="#conclusao">Conclusão</a></li>
+        <li><a href="#referencias">Referencias</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2 id="introducao">Introdução</h2>
+    <p>
+      Com a popularização da internet muitas linguagens de programação foram criadas ou adaptadas
+      para fazer o serviço de central de processamento e disponibilização de informações. Muitas
+      das linguagens BACK-END atuais não foram propriamente desenvolvidas para fazê-lo, mas o fazem muito bem.
+      Linguagens muito populares como <strong>C++</strong>, <strong>JavaScript</strong> e <strong>Python</strong>
+      são hoje, muito utilizadas na programação web, principalmente quando falamos de BACK-END.
+    </p>
+
+    <h2 id="o-que-e">O que é BACK-END</h2>
+    <p>
+      Antigamente os sites da web eram apenas um lugar para se visualizar informações,
+      apenas se preocupando no que mostrar e de que forma mostrar, sem muito processo por trás.
+      Hoje as coisas já são muito diferentes, as aplicações web mais modernas não se baseiam em apenas design,
+      mas também em processos, no que a aplicação faz, quais informações ela guarda, quais são suas regras de negócio.
+      Tudo isso só é possível graças ao BACK-END.
+      Para facilitar o entendimento, podemos ver uma aplicação web como um restaurante.
+      O salão principal, onde os clientes se sentam, fazem o pedido, realizam sua refeição pode ser considerado o
+      FRONT-END,
+      é a parte que o usuário interage, a parte que ele vê, a parte onde ele tem a percepção de tudo o que lhe
+      interessa.
+      Já o BACK-END então, seria a cozinha, o lugar onde são feitos os processos, a parte onde o cliente em si não
+      interage,
+      afinal nenhum cliente vai ao restaurante, e ao pedir um prato (neste exemplo digamos que o pedido seja um simples
+      ovo frito),
+      o cliente não vai até a cozinha, pega o ovo na dispensa, frita o ovo, o coloca no prato, volta para o salão e faz
+      sua refeição.
+      O que acontece na realidade é, o cliente ao visualizar o menu, pede o ovo, aguarda a cozinha o prepará-lo e quando
+      recebido faz sua refeição.
+      Portanto podemos considerar o BACK-END como a parte da aplicação que realiza os processos,
+      a parte que o cliente não interage, a parte que faz a conexão com o banco de dados, resumindo, a parte que é
+      responsável por fazer e não aparecer.
+    </p>
+
+    <h2 id="exemplos">Exemplos de linguagens e frameworks</h2>
+    <p>
+      Podemos então reconhecer algumas das linguagens utilizadas no desenvolvimento do BACK-END de uma aplicação.
+      Apesar de haver várias linguagens com diversos frameworks, falaremos de duas, Java Script e Python.
+    </p>
+
+    <h3 id="framework">Mas, o que é um framework? E qual a diferença entre biblioteca </h3>
+    <p>
+      Como citado no site tableless.github.io, o framework, “tem como principal objetivo resolver problemas
+      recorrentes com uma abordagem genérica,
+      permitindo ao desenvolvedor focar seus esforços na resolução do problema em si, e não ficar reescrevendo
+      software.”.
+      Ou seja, o framework é um código já escrito que permite o desenvolvedor se preocupar mais com o desenvolvimento
+      das
+      atividades necessárias para resolver o problema do usuário do que as ferramentas para que o desenvolvimento
+      aconteça.
+      Voltando ao nosso exemplo do restaurante, podemos ver o framework como as ferramentas a disposição do
+      cozinheiro.
+      Ao receber o pedido de fritar um ovo, o cozinheiro não vai se preocupar em por exemplo, produzir a frigideira,
+      isso faz parte das ferramentas que ele tem para realizar o pedido do cliente, e não do pedido em si. Logo o
+      cozinheiro utilizaria a frigideira(framework),
+      para realizar o pedido do cliente, sem precisar cria-la, focando seu tempo em questões em como o ovo deve ser
+      frito, ou que tipo de ovo deve ser utilizado.
+      Porém, pode surgir a dúvida, já que isso parece muito com uma biblioteca. E realmente ambas têm muitos aspectos
+      comuns.
+      Podemos considerar por exemplo um framework como uma coleção de bibliotecas que servem de base para a criação da
+      aplicação.
+      Eu gosto de definir a principal diferença entre framework e biblioteca pela maneira como se é utilizado cada
+      uma. Uma biblioteca
+      por exemplo é utilizada chamando seus métodos, por exemplo:
+
+    </p>
+
+    <div class="box">
+      <pre>
+        <code>
+          Import random<br>
+          num = random.randit(1,11)<br>
+          print(num)
+        </code>
+      </pre>
+    </div>
+
+    <table border="1" id="code-block" style="background-color: black">
+      <tbody>
+        <td>
+          <pre>
+            Import random<br>
+            num = random.randit(1,11)<br>
+            print(num)
+          </pre>
+        </td>
+      </tbody>
+    </table>
+
+    <p>
+      Neste caso utilizamos a biblioteca do python ”random“, e chamamos seu metodo, ”randint”.
+      Porém no caso de um Framework é comum utilizarmos suas ferramentas assim:
+    </p>
+
+    <table border="1" id="code-block" style="background-color: black">
+      <tbody">
+        <td>
+          <pre>
+              from flask import Flask, render_template<br>
+              
+              app = Flask(__name__)<br>
+
+              @app.route('/')<br>
+              def home():<br>
+              &emsp;return render_template("index.html")<br>
+              if __name__ == "__main__":<br>
+              &emsp;app.run(debug=true)<br>
+            </pre>
+        </td>
+        </tbody>
+    </table>
+
+    <br>
+    <p>O Framework Flask de BACK-END em Python neste exemplo foi criado para renderizar uma página da web, o
+      index.html.
+      Resumindo, o que o Framework está fazendo é, ao acessar o url desta página, na route (“/”) que é o próprio
+      endereço, a página é carregada. Veja que diferente da biblioteca, não chamamos diretamente o código que
+      escrevemos para realizar algo, neste caso, programamos o comportamento da aplicação quando for pedido o que se
+      encontra no “/”.
+      Portanto, uma das diferenças mais marcantes, é que na biblioteca utilizamos seus métodos, suas funções de forma
+      mais ativa, as chamando e recebendo seu resultado.
+      Em um Framework, definimos o comportamento das respostas, enquanto o Framework se encarrega de chamá-las quando
+      é necessário.
+    </p>
+
+    <h3 id="javascript-express">JavaScript e Express</h3>
+
+    <p>
+      JavaScript se tornou uma das linguagens mais poderosas quando falamos de programação web. Desde as ferramentas de
+      front as de back, toda a web utiliza Javascript nos mais diversos tipos de sistema.
+      Utilizando Express ele permite a criação de aplicações web de maneira rápido e fácil.
+      Diretamente do <a href="https://expressjs.com/">https://expressjs.com/</a>, podemos utilizar facilmente um dos
+      melhores frameworks em Java Script, o
+      Express.
+      Ele necessita de Node.JS. E é uma excelente feramente para o desenvolvimento rápido e fácil de aplicações web.
+      Pode ser usado tanto para aplicações como APIs e é muito popular na criação de outros frameworks.
+      Um bom lugar para entender como funciona, e talvez até começar a desenvolver uma aplicação em
+      Express é o MDN Web Docs que pode ser lido em português.<a
+        href="https://developer.mozilla.org/ptBR/docs/Learn/Server-side/Express_Nodejs/Introdu%C3%A7%C3%A3o">
+        https://developer.mozilla.org/ptBR/docs/Learn/Server-side/Express_Nodejs/Introdu%C3%A7%C3%A3o</a>
+    </p>
+
+    <h3 id="python-flask">Python e Flask </h3>
+    <p>
+      Outro Framework bem popular é o Flask, desenvolvido em Python que apesar de ser muito utilizada em Data Science,
+      também está ganhando mercado com desenvolvimento web, é uma linguagem BACK-END fácil de se utilizar e bastante
+      poderosa.
+      Sua Documentação se encontra em <a
+        href="https://flask.palletsprojects.com/en/1.1.x/">https://flask.palletsprojects.com/en/1.1.x/</a>.
+    </p>
+    <h3 id="conclusao">Conclusão</h3>
+    <p>
+      Existem diversas linguagens de programação quando se trata de BACK-END, o que é preciso é saber quais suas
+      necessidades e quais ferramentas que melhor as atendem.
+      Deve-se levar em conta também a familiaridade da equipe com a linguagem, as vezes é mais fácil utilizar o que está
+      no conhecimento comum do que aprender uma linguagem e um framework do zero.
+    </p>
+  </section>
+  <footer>
+    <ul id="#referencias">
+      <li>
+        Express 4.17.1 Fast, unopinionated, minimalist web framework for Node.js. Disponível em: &lt;<a href="https://expressjs.com/">https://expressjs.com/</a> &gt;. Acesso em: 16 ago. 2023. 
+      </li>
+      <li>
+        Flask. Disponível em: &lt; <a href="https://flask.palletsprojects.com/en/1.1.x/">https://flask.palletsprojects.com/en/1.1.x/</a> &gt;. Acesso em: 16 ago. 2023. 
+      </li>
+    </ul>
+    <p>Aula PWeb - 2023</p>
+  </footer>
+</body>
+
+</html>

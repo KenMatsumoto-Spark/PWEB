@@ -1,0 +1,14 @@
+body{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+};
+
+pre{
+  background-color: black;
+  white-space: pre-line;
+  border: 1px solid white;
+}
+
+code-box{
+  background-color: black;
+}
