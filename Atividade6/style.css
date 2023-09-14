@@ -1,0 +1,73 @@
+.box{
+  width: 500px;
+  height: 500px;
+}
+
+@media screen and (max-width: 1920px) {
+
+  .box{
+    background-color: yellow;
+  }
+
+  h1:before{
+    content: '1920px';
+  }
+}
+
+@media screen and (max-width: 1366px) {
+
+  .box{
+    background-color: blue;
+  }
+
+  h1:before{
+    content: '1366px';
+  }
+}
+
+@media screen and (max-width: 1080px) {
+
+  .box{
+    background-color: red;
+  }
+
+  h1:before{
+    content: '1080px';
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  .box{
+    background-color: pink;
+  }
+
+  h1:before{
+    content: '1024px';
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .box{
+    background-color: orange;
+  }
+  h1:before{
+    content: '768px';
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .box{
+    background-color: black;
+  }
+  h1:before{
+    content: '420px';
+    color: white;
+  }
+
+}
