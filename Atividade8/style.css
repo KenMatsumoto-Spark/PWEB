@@ -1,0 +1,57 @@
+body{
+  margin: 0 auto;
+}
+
+.box{
+  background-color: aliceblue;
+  height: 220px;
+  width: 200px;
+  margin: 20px auto;
+  border: 2px solid gray;
+  padding: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.result_box{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  background-color: aliceblue;
+  height: 20px;
+  width: 900px;
+  margin: 20px auto;
+  border: 2px solid gray;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.text_box{
+  font-family: 'Courier New', Courier, monospace;
+  background-color: aliceblue;
+  border: 2px solid gray;
+  margin: 0 auto;
+  width: 500px;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.player_choice{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 400px;
+}
+
+.box:hover{
+  opacity: 50%;
+}
+
+.cpu_choice_item{
+  font-size: 3rem;
+}
+
+img{
+  height: 200px;
+  width: 200px;
+}

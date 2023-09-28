@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="text_box">
+    <h1>Escolha uma das opções:</h1>
+  </div>
+  <div class="player_choice">
+      <div class="box" onclick="game('tesoura')">
+        <img src="tesoura.png">
+      </div>
+      <div class="box" onclick="game('pedra')">
+        <img src="pedra.png">
+      </div>
+      <div class="box" onclick="game('papel')">
+        <img src="papel.png">
+      </div>
+  </div>
+  <div class="text_box">
+    <h1>Resultado:</h1>
+  </div>
+  <div class="result_box" id="result">
+    <h1></h1>
+  </div>
+  <div class="text_box">
+    <h1>Escolha do computador:</h1>
+  </div>
+  <div class="cpu_choice">
+    <div class="box">
+      <img id="cpu_choice_img" src="thinking.gif">
+    </div>
+  </div>
+
+  <script src="jankenpo.js"></script>
+</body>
+</html>
