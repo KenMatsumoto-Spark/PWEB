@@ -1,0 +1,28 @@
+body{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.formulario{
+  background-color: rgb(212, 233, 163);
+  height: 500px;
+  width: 500px;
+  margin: 20px auto;
+  border: 2px solid gray;
+  padding: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.formField{
+  margin: 3px 3px;
+}
+
+.enviar{
+  margin-top: 20px;
+}
+
+.resultado{
+  margin-top: 20px;
+}
+
