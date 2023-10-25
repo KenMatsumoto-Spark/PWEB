@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 13</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="box">
+    <h3 id="windowState">Abra a Janela</h3>
+    <img id="myWindow" src="closed.png" onmouseover="openWindow()" onmouseout="closeWindow()" onclick="breakWindow()">
+  </div>
+</body>
+<script>
+  var windowImg = document.getElementById("myWindow")
+  var windowText = document.getElementById("windowState")
+
+  var windowBroken = false
+  function openWindow(){
+    if(!windowBroken){
+      windowImg.src ='open.png'
+      windowText.textContent = 'Janela Aberta'
+    }
+  }
+
+  function closeWindow(){
+    if(!windowBroken)
+      windowImg.src = 'closed.png'
+      windowText.textContent = 'Janela Fechada'
+    }
+    
+    function breakWindow(){
+      windowBroken = true
+      windowImg.src = 'broken.jfif'
+      windowText.textContent = 'Janela Quebrada'
+  }
+</script>
+</html>
