@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade15</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  
+  <H1>Formulátio Principal</H1>
+  <form name="formulario" onsubmit="validar()">
+    <label for="nome" size="10">Nome:</label><br/>
+    <input type="text" id="nome" /><br/>
+    <label for="email">Email:</label><br/>
+    <input type="email" id="email" /><br/>
+    <label for="nome">Comentario:</label><br/>
+    <textarea type="text" id="nome" rows="4" cols="50" minlength="20"></textarea><br/>
+
+    <div class="pesquisa">
+      <h2>Pesquisa:</h2>
+      <h3>Primeira vez nesta página?</h3>
+  
+      <input type="radio" id="pesquisa" name="pesquisa" value="sim" checked />
+      <label for="pesquisa">Sim</label>
+      <input type="radio" id="pesquisa" name="pesquisa" value="nao" />
+      <label for="pesquisa">Não</label>
+    </div>
+    <input type="submit" id="btn" value="Enviar" />
+    <input type="button" id="btn" value="Limpar" />
+  </form>
+</body>
+
+<script>
+  const validar = () => {
+    const name = document.forms.formulario[0]
+    const email = document.forms.formulario[1]
+    const comment = document.forms.formulario[2]
+    
+    const pesquisa = document.forms.formulario[3]
+    const pesquisa2 = document.forms.formulario[4]
+    if(pesquisa.checked){
+      return("Que bom que você voltou a visitar esta página!")
+    }else{
+      return("Volte sempre à está página!")
+    }
+
+  }
+
+</script>
+</html>

@@ -1,0 +1,9 @@
+body{
+  background-color: rgb(166, 166, 228);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+label{
+  margin: 10px auto;
+}
+
